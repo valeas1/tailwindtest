@@ -3,7 +3,7 @@ module.exports = {
   content: ["./app/**/*.{html,js}"],
   theme: {
     screens: {
-      '2xl' : '1430px',
+      'sm' : '1430px',
     },
     container: {
       padding: '15px',
@@ -23,6 +23,7 @@ module.exports = {
     extend: {
       colors: {
         coral: '#FF555A',
+        hoverLink: '#E9252B',
       }
     },
   },

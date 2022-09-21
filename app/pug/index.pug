@@ -6,5 +6,14 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="css/output.css")
         title Document
-    body(class="container")
-        h1(class='font-robo font-700 text-coral') test
+    body
+        header(class='header container pt-6 pb-6 flex items-center')
+            img(class='heder__logo w-44 h-24 mr-auto' src="img/logo.png", alt="logo" srcset='img/logo@2x.png' 2x)
+            nav(class='header__menu mr-[71px]')
+                a(class='header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink' href="#") Home
+                a(class='header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink' href="#") About
+                a(class='header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink' href="#") Courses
+                a(class='header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink' href="#") Admission
+                a(class='header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink' href="#") Services
+            button(class='header__btn-in font-mont font-700 text-[#FFFFFF] text-[16px] leading-[20px] py-2 px-6 border rounded border-coral bg-coral mx-[6px] hover:bg-white hover:text-[#172D42]') Sing in
+            button(class='header__btn-up font-mont font-700 text-[#FFFFFF] text-[16px] leading-[20px] py-2 px-6 border rounded border-coral bg-coral mx-[6px] hover:bg-white hover:text-[#172D42]') Sing up
