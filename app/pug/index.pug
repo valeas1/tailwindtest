@@ -8,12 +8,35 @@ html(lang="en")
         title Document
     body
         header(class='header container pt-6 pb-6 flex items-center')
-            img(class='heder__logo w-44 h-24 mr-auto' src="img/logo.png", alt="logo" srcset='img/logo@2x.png' 2x)
-            nav(class='header__menu mr-[71px]')
-                a(class='header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink' href="#") Home
-                a(class='header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink' href="#") About
-                a(class='header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink' href="#") Courses
-                a(class='header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink' href="#") Admission
-                a(class='header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink' href="#") Services
+            a(href="#") 
+                img(class='heder__logo w-44 h-24' src="img/logo.png", alt="logo" srcset='img/logo@2x.png' 2x)
+            nav(class='header__menu mr-[71px] ml-auto')
+                ul(class='flex relative')
+                    li(class='header__menu-link')
+                        a(class='header__menu-drop mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink' href="#") Home
+                        ul(class='absolute hidden')
+                            li
+                                a(class='py-[3px] font-mont font-500 text-[#696968] hover:text-hoverLink' href="#") Same link
+                            li
+                                a(class='py-[3px] font-mont font-500 text-[#696968] hover:text-hoverLink' href="#") Same link
+                            li
+                                a(class='py-[3px] font-mont font-500 text-[#696968] hover:text-hoverLink' href="#") Same link
+                            li
+                                a(class='py-[3px] font-mont font-500 text-[#696968] hover:text-hoverLink' href="#") Same link
+                    li
+                        a(class='header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink' href="#") About
+                    li
+                        a(class='header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink' href="#") Courses
+                    li
+                        a(class='header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink' href="#") Admission
+                    li
+                        a(class='header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink' href="#") Services
             button(class='header__btn-in font-mont font-700 text-[#FFFFFF] text-[16px] leading-[20px] py-2 px-6 border rounded border-coral bg-coral mx-[6px] hover:bg-white hover:text-[#172D42]') Sing in
-            button(class='header__btn-up font-mont font-700 text-[#FFFFFF] text-[16px] leading-[20px] py-2 px-6 border rounded border-coral bg-coral mx-[6px] hover:bg-white hover:text-[#172D42]') Sing up
+            button(class='header__btn-up font-mont font-700 text-[#FFFFFF] text-[16px] leading-[20px] py-2 px-6 border rounded border-coral bg-coral mx-[6px] hover:bg-white hover:text-[#172D42]') Sing up     
+        div(class='hero-wrap')
+            section(class='hero container pt-36 pb-44')
+                p(class='hero__pretitle text-white font-mont font-500 mb-10') Welcome To Atova 
+                    span(class='text-[#FFA395]') Technology
+                h1(class='hero__title font-robo font-700 text-white text-3xl leading-9 mb-4') Learn On Your Schedule
+                p(class='hero__text text-white font-mont font-500 text-base leading-5 mb-14') Contrary to popular belief, Lorem Ipsum is not simply
+                form(class='hero__form' action="#") 

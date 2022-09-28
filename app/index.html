@@ -10,9 +10,32 @@
 </head>
 
 <body>
-    <header class="header container pt-6 pb-6 flex items-center"><img class="heder__logo w-44 h-24 mr-auto" src="img/logo.png" alt="logo" srcset="img/logo@2x.png" 2x>
-        <nav class="header__menu mr-[71px]"><a class="header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink" href="#">Home</a><a class="header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink" href="#">About</a><a class="header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink" href="#">Courses</a><a class="header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink" href="#">Admission</a><a class="header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink" href="#">Services</a></nav><button class="header__btn-in font-mont font-700 text-[#FFFFFF] text-[16px] leading-[20px] py-2 px-6 border rounded border-coral bg-coral mx-[6px] hover:bg-white hover:text-[#172D42]">Sing in</button><button class="header__btn-up font-mont font-700 text-[#FFFFFF] text-[16px] leading-[20px] py-2 px-6 border rounded border-coral bg-coral mx-[6px] hover:bg-white hover:text-[#172D42]">Sing up</button>
+    <header class="header container pt-6 pb-6 flex items-center"><a href="#"> <img class="heder__logo w-44 h-24" src="img/logo.png" alt="logo" srcset="img/logo@2x.png" 2x></a>
+        <nav class="header__menu mr-[71px] ml-auto">
+            <ul class="flex relative">
+                <li class="header__menu-link"><a class="header__menu-drop mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink" href="#">Home</a>
+                    <ul class="absolute hidden">
+                        <li><a class="py-[3px] font-mont font-500 text-[#696968] hover:text-hoverLink" href="#">Same link</a></li>
+                        <li><a class="py-[3px] font-mont font-500 text-[#696968] hover:text-hoverLink" href="#">Same link</a></li>
+                        <li><a class="py-[3px] font-mont font-500 text-[#696968] hover:text-hoverLink" href="#">Same link</a></li>
+                        <li><a class="py-[3px] font-mont font-500 text-[#696968] hover:text-hoverLink" href="#">Same link</a></li>
+                    </ul>
+                </li>
+                <li><a class="header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink" href="#">About</a></li>
+                <li><a class="header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink" href="#">Courses</a></li>
+                <li><a class="header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink" href="#">Admission</a></li>
+                <li><a class="header__menu-link mx-3 font-mont font-500 text-[#696968] hover:text-hoverLink" href="#">Services</a></li>
+            </ul>
+        </nav><button class="header__btn-in font-mont font-700 text-[#FFFFFF] text-[16px] leading-[20px] py-2 px-6 border rounded border-coral bg-coral mx-[6px] hover:bg-white hover:text-[#172D42]">Sing in</button><button class="header__btn-up font-mont font-700 text-[#FFFFFF] text-[16px] leading-[20px] py-2 px-6 border rounded border-coral bg-coral mx-[6px] hover:bg-white hover:text-[#172D42]">Sing up </button>
     </header>
+    <div class="hero-wrap">
+        <section class="hero container pt-36 pb-44">
+            <p class="hero__pretitle text-white font-mont font-500 mb-10">Welcome To Atova <span class="text-[#FFA395]">Technology</span></p>
+            <h1 class="hero__title font-robo font-700 text-white text-3xl leading-9 mb-4">Learn On Your Schedule</h1>
+            <p class="hero__text text-white font-mont font-500 text-base leading-5 mb-14">Contrary to popular belief, Lorem Ipsum is not simply</p>
+            <form class="hero__form" action="#"> </form>
+        </section>
+    </div>
 </body>
 
 </html>

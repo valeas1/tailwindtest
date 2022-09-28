@@ -571,6 +571,14 @@ body {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -581,16 +589,32 @@ body {
   margin-right: 6px;
 }
 
-.mr-auto {
-  margin-right: auto;
-}
-
 .mr-\[71px\] {
   margin-right: 71px;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-24 {
@@ -623,6 +647,11 @@ body {
   background-color: rgb(255 85 90 / var(--tw-bg-opacity));
 }
 
+.py-\[3px\] {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -641,16 +670,39 @@ body {
   padding-bottom: 1.5rem;
 }
 
+.pt-36 {
+  padding-top: 9rem;
+}
+
+.pb-44 {
+  padding-bottom: 11rem;
+}
+
 .font-mont {
   font-family: Montserrat, Arial, sans-serif;
+}
+
+.font-robo {
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .text-\[16px\] {
   font-size: 16px;
 }
 
-.text-\[34px\] {
-  font-size: 34px;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-500 {
@@ -665,19 +717,64 @@ body {
   line-height: 20px;
 }
 
+.leading-9 {
+  line-height: 2.25rem;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
+}
+
 .text-\[\#696968\] {
   --tw-text-opacity: 1;
   color: rgb(105 105 104 / var(--tw-text-opacity));
 }
 
-.text-\[\#172D42\] {
-  --tw-text-opacity: 1;
-  color: rgb(23 45 66 / var(--tw-text-opacity));
-}
-
 .text-\[\#FFFFFF\] {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#FFA395\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 163 149 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.header__menu-link:hover > ul {
+  display: block;
+}
+
+.header__menu-drop::after {
+  content: "";
+  position: relative;
+  display: inline-flex;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid #E9252B;
+  border-bottom: 2px solid #E9252B;
+  transform: rotate(-45deg);
+  top: -4px;
+  margin-left: 6px;
+}
+
+.hero-wrap {
+  background-blend-mode: multiply;
+  background: url(../img/hero-bg.jpg), rgba(0, 41, 89, 0.7);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+  .hero-wrap {
+    background: url(../img/hero-bg@2x.jpg), rgba(0, 41, 89, 0.7);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 @font-face {

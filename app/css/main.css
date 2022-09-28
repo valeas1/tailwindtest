@@ -55,5 +55,37 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+  .header__menu-link:hover > ul {
+    display: block;
+  }
+  .header__menu-drop::after {
+    content: "";
+    position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid #E9252B;
+    border-bottom: 2px solid #E9252B;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: -4px;
+    margin-left: 6px;
+  }
+  .hero-wrap {
+    background-blend-mode: multiply;
+    background: url(../img/hero-bg.jpg), rgba(0, 41, 89, 0.7);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) and (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+    .hero-wrap {
+      background: url(../img/hero-bg@2x.jpg), rgba(0, 41, 89, 0.7);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
 }
 /*# sourceMappingURL=main.css.map */
